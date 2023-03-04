@@ -1,5 +1,3 @@
-
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,9 +25,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    #local apps
+    # local apps
     "books.apps.BooksConfig",
+    "apis.apps.ApisConfig",
+    # third-party apps
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
